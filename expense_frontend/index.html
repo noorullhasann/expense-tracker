@@ -9,11 +9,16 @@
 <h2>Add Expense</h2>
 
 <form id="expenseForm">
+    <input type="hidden" id="expenseId">
     <input type="text" id="title" placeholder="Title" required>
     <input type="number" id="amount" placeholder="Amount" required>
     <input type="text" id="category" placeholder="Category" required>
-    <button type="submit">Add Expense</button>
+    <button type="submit">Save Expense</button>
 </form>
+
+<h3>Total: ₹<span id="total">0</span></h3>
+
+<input type="text" id="filter" placeholder="Filter by category">
 
 <h2>Expenses</h2>
 <ul id="expenseList"></ul>
